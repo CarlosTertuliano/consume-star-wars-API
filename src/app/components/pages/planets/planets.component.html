@@ -1,0 +1,6 @@
+<app-search-bar></app-search-bar>
+<app-table [planets]="planets"></app-table>
+<div class="nav_buttons">
+  <app-button *ngIf="page > 1" [nameButton]="'Prev'" (click)="changePage(false)"></app-button>
+  <app-button *ngIf="page < 6" [nameButton]="'Next'" (click)="changePage(true)"></app-button>
+</div>

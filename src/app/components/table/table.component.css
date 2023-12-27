@@ -1,0 +1,41 @@
+.table-planets table{
+  width: 150vh;
+}
+
+.table-planets table th {
+  margin-top: 2em;
+}
+
+.table-planets {
+  margin-bottom: 1em;
+}
+
+.table-planets table tr{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #FFE81F;
+  padding: 0.5em 0;
+  align-items: center;
+}
+
+.table-planets table tr th, .table-planets table tr td{
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  font-family: Helvetica-Black;
+}
+
+.table-planets table tr td {
+  color: #fff;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  width: 100%;
+  margin-top: 2em;
+  font-family: Helvetica-Black;
+}

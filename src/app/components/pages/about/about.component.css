@@ -1,0 +1,27 @@
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 90vh;
+}
+
+.about h3, .about p, .about p a{
+  font-family: Helvetica-Black;
+  margin-bottom: 1em;
+  color: #FFE81F;
+}
+
+.about p a {
+  text-decoration: underline;
+  transition: .4s;
+}
+
+.about p a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.about p{
+  text-align: justify;
+}

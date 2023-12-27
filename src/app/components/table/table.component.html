@@ -1,0 +1,21 @@
+<div class="table-planets">
+  <table *ngIf="planets.length >= 0; else planetIsEmpty">
+    <tr>
+      <th>Planet</th>
+      <th>Clima</th>
+      <th>Terreno</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+    <tr *ngFor="let planet of planets">
+      <td>{{planet.name}}</td>
+      <td>{{planet.climate}}</td>
+      <td>{{planet.terrain}}</td>
+      <td>Sem Status</td>
+      <td><app-button [nameButton]="'Add'"></app-button></td>
+    </tr>
+  </table>
+  <ng-template #planetIsEmpty>
+    <p>Planets not found!</p>
+  </ng-template>
+</div>
